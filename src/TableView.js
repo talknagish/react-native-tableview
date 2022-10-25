@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import {
   NativeModules,
   requireNativeComponent,
-  EdgeInsetsPropType,
-  PointPropType,
   findNodeHandle,
   View,
 } from 'react-native';
@@ -12,7 +10,11 @@ import TableViewSection from './TableViewSection';
 import TableViewCell from './TableViewCell';
 import TableViewItem from './TableViewItem';
 import RNTableViewConsts from './TableViewConsts';
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+import {
+  ViewPropTypes,
+  EdgeInsetsPropType,
+  PointPropType,
+} from 'deprecated-react-native-prop-types';
 
 const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
