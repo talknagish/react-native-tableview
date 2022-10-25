@@ -12,7 +12,7 @@ import TableViewSection from './TableViewSection';
 import TableViewCell from './TableViewCell';
 import TableViewItem from './TableViewItem';
 import RNTableViewConsts from './TableViewConsts';
-import ViewPropTypes from './util/ViewPropTypes';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
@@ -372,7 +372,7 @@ class TableView extends React.Component {
     return (
       <View style={[{ flex: 1 }, this.props.style]}>
         <RNTableView
-          ref={ref => {
+          ref={(ref) => {
             this.tableView = ref;
           }}
           sections={this.state.sections}
