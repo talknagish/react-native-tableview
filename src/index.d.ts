@@ -3,10 +3,10 @@ import * as React from 'react';
 import {
   ViewStyle,
   Insets,
-  PointPropType,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from 'react-native';
+import { PointPropType } from 'deprecated-react-native-prop-types';
 
 export type FontWeight =
   | 100
